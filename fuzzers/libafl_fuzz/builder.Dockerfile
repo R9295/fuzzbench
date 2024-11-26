@@ -52,5 +52,5 @@ RUN cd /libafl && git pull
 RUN cd /libafl && \
     unset CFLAGS CXXFLAGS && \
     cd ./fuzzers/forkserver/libafl-fuzz && \
-    PATH="/root/.cargo/bin/:$PATH" cargo build --profile release
+    PATH="/root/.cargo/bin/:$PATH" cargo build --profile release --features fuzzbench
 
